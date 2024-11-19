@@ -1,0 +1,166 @@
+{
+  "name": "test_db",
+  "tables": {
+    "table1": {
+      "name": "table1",
+      "schema": {
+        "question": "string",
+        "points": "integer",
+        "right_answer": "char",
+        "score": "real",
+        "user_email": "email",
+        "selection": {
+          "type": "enum",
+          "values": [
+            "a",
+            "b",
+            "c"
+          ]
+        }
+      },
+      "rows": [
+        [
+          "question1",
+          10,
+          "a",
+          25.5,
+          "test1@example.com",
+          "b"
+        ],
+        [
+          "question2",
+          5,
+          "b",
+          20.999,
+          "test2@example.com",
+          "b"
+        ]
+      ]
+    },
+    "table2": {
+      "name": "table2",
+      "schema": {
+        "question_table2": "string",
+        "points_table2": "integer",
+        "right_answer_table2": "char",
+        "score_table2": "real",
+        "user_email_table2": "email",
+        "selection_table2": {
+          "type": "enum",
+          "values": [
+            "a",
+            "b",
+            "c"
+          ]
+        }
+      },
+      "rows": [
+        [
+          "question1",
+          10,
+          "a",
+          25.5,
+          "test1@example.com",
+          "b"
+        ],
+        [
+          "question2",
+          5,
+          "b",
+          20.999,
+          "test2@example.com",
+          "b"
+        ]
+      ]
+    },
+    "table12_product": {
+      "name": "table12_product",
+      "schema": {
+        "question": "string",
+        "points": "integer",
+        "right_answer": "char",
+        "score": "real",
+        "user_email": "email",
+        "selection": {
+          "type": "enum",
+          "values": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        "table2.question_table2": "string",
+        "table2.points_table2": "integer",
+        "table2.right_answer_table2": "char",
+        "table2.score_table2": "real",
+        "table2.user_email_table2": "email",
+        "table2.selection_table2": {
+          "type": "enum",
+          "values": [
+            "a",
+            "b",
+            "c"
+          ]
+        }
+      },
+      "rows": [
+        [
+          "question1",
+          10,
+          "a",
+          25.5,
+          "test1@example.com",
+          "b",
+          "question1",
+          10,
+          "a",
+          25.5,
+          "test1@example.com",
+          "b"
+        ],
+        [
+          "question1",
+          10,
+          "a",
+          25.5,
+          "test1@example.com",
+          "b",
+          "question2",
+          5,
+          "b",
+          20.999,
+          "test2@example.com",
+          "b"
+        ],
+        [
+          "question2",
+          5,
+          "b",
+          20.999,
+          "test2@example.com",
+          "b",
+          "question1",
+          10,
+          "a",
+          25.5,
+          "test1@example.com",
+          "b"
+        ],
+        [
+          "question2",
+          5,
+          "b",
+          20.999,
+          "test2@example.com",
+          "b",
+          "question2",
+          5,
+          "b",
+          20.999,
+          "test2@example.com",
+          "b"
+        ]
+      ]
+    }
+  }
+}

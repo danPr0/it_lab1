@@ -1,0 +1,24 @@
+{
+  "name": "t",
+  "tables": {
+    "t": {
+      "name": "t",
+      "schema": {
+        "question": "string",
+        "points": "integer",
+        "right_answer": "char",
+        "score": "real",
+        "user_email": "email",
+        "selection": {
+          "type": "enum",
+          "values": [
+            "a",
+            "b",
+            "c"
+          ]
+        }
+      },
+      "rows": []
+    }
+  }
+}
