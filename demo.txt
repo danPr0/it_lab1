@@ -1,1 +1,1 @@
-question:string,points:integer,right_answer:char,score:real, user_email:email,selection:enum(a;b;c)
+question:string,points:integer,right_answer:char,score:real,user_email:email,selection:enum(a;b;c)

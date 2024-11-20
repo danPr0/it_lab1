@@ -25,13 +25,10 @@ class Database:
         table1 = self.tables[table1_name]
         table2 = self.tables[table2_name]
 
-        # Схема для результату
         new_schema = {**table1.schema, **{f"{table2.name}.{col}": col_type for col, col_type in table2.schema.items()}}
 
-        # Створення нової таблиці
         new_table = Table(result_table_name, new_schema, validate_input=False)
 
-        # Обчислення добутку
         for row1 in table1.rows:
             for row2 in table2.rows:
                 new_table.add_row(row1 + row2)
